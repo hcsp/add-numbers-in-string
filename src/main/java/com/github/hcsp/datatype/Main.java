@@ -11,6 +11,7 @@ public class Main {
     // 注意，若参数为null，则当作0处理，即add("123", null)=="123", add(null, null)=="0"
     public static String add(String a, String b) {
         int x1,y1,z1,x2,y2,z2,x,y,z;
+        String i;
         if (a != null) {
             int c = Integer.valueOf(a);
             x1 = c / 100;
@@ -31,12 +32,14 @@ public class Main {
             y2 = 0;
             z2 = 0;
         }
+        if (a == null && b == null){
+            return i = "0";
+        }else {
             x = x1 + x2;
             y = y1 + y2;
             z = z1 + z2;
-        String i = String.valueOf(x) + String.valueOf(y) + String.valueOf(z);
-        if (a == null && b == null)
-            return i = "0";
+            i = String.valueOf(x) + String.valueOf(y) + String.valueOf(z);
+        }
         return i;
     }
 }
