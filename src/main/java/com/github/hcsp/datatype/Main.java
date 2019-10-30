@@ -20,6 +20,6 @@ public class Main {
             return "0";
         }
 
-        return a + b;
+        return Integer.toString(Integer.valueOf(a) + Integer.valueOf(b));
     }
 }
