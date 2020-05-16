@@ -10,10 +10,10 @@ public class Main {
     // 例如，给定a="123",b="456"，返回"579"，因为123+456=579
     // 注意，若参数为null，则当作0处理，即add("123", null)=="123", add(null, null)=="0"
     public static String add(String a, String b) {
-        return String.valueOf(string2Float(a) + string2Float(b));
+        return String.valueOf(string2Int(a) + string2Int(b));
     }
 
-    private static Float string2Float(String str) {
-        return str == null ? 0 : Float.valueOf(str);
+    private static Integer string2Int(String str) {
+        return str == null ? 0 : Integer.valueOf(str);
     }
 }
