@@ -10,8 +10,6 @@ public class Main {
     // 例如，给定a="123",b="456"，返回"579"，因为123+456=579
     // 注意，若参数为null，则当作0处理，即add("123", null)=="123", add(null, null)=="0"
     public static int add(String a, String b) {
-        a = a == null ? "0": a;
-        b = b == null ? "0": b;
-        return Integer.parseInt(a) + Integer.parseInt(b);
+        return Integer.parseInt(a == null ? "0": a) + Integer.parseInt(b == null ? "0": b);
     }
 }
