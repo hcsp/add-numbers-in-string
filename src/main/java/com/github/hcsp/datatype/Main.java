@@ -11,15 +11,14 @@ public class Main {
     // 例如，给定a="123",b="456"，返回"579"，因为123+456=579
     // 注意，若参数为null，则当作0处理，即add("123", null)=="123", add(null, null)=="0"
     public static String add(String a, String b) {
-        if (a == null && b == null) {
-            return null;
-        } else if (a == null && b != null) {
-            return b;
-        } else if (b == null && a != null) {
-            return a;
+        return stringToint(a) + stringToint(b) + "";
+    }
+
+    private static int stringToint(String str) {
+        if (str == null) {
+            return 0;
         } else {
-            int i = Integer.parseInt(a) + Integer.parseInt(b);
-            return String.valueOf(i);
+            return Integer.parseInt(str);
         }
 
     }
