@@ -13,7 +13,6 @@ public class Main {
     public static String add(String a, String b) {
         if (a != null) {
             if (b != null) {
-
                 return Integer.toString(Integer.parseInt(a) + Integer.parseInt(b));
             } else {
                 return a;
