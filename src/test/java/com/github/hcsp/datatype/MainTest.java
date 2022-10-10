@@ -10,6 +10,5 @@ public class MainTest {
         Assertions.assertEquals("0", Main.add("123", "-123"));
         Assertions.assertEquals("123", Main.add("123", null));
         Assertions.assertEquals("0", Main.add(null, null));
-
     }
 }
